@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.scss';
+import Card from "./components/Card";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={styles.appContainer}>
+        <Card
+            img="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
+            name="Walter White"
+            birthday="09.07.1958"
+            status="покойный"
+        />
+      </div>
   );
 }
 
