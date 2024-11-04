@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './styles.module.scss'
+import styles from './StatusBadge.module.scss'
 
 
 const StatusBadge = ({ status }) => {
-    const isAlive = status === 'живой';
+    const isAlive = status === 'Alive';
     return (
         <div className={`${styles.badge} ${isAlive ? styles.alive : styles.deceased}`}>
-            {status}
+            {isAlive ? "Alive" : "Deceased"}
         </div>
     );
 };

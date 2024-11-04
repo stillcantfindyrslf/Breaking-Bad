@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './styles.module.scss';
+import styles from './Card.module.scss';
 
-import Avatar from '../Avatar';
-import StatusBadge from "../StatusBadge";
-import Info from "../Info";
+import Avatar from '../Avatar/Avatar';
+import StatusBadge from "../StatusBadge/StatusBadge";
+import Info from "../Info/Info";
 
-const Card = ({ img, name, birthday, status}) => (
+const Card = ({ img, status, name, birthday }) => (
     <div className={styles.card}>
         <Avatar img={img} />
-        <div className={styles.content}>
+        <div className={styles.details}>
             <div className="bagde">
                 <StatusBadge status={status} />
             </div>
