@@ -1,11 +1,16 @@
 import styles from './App.module.scss';
-import CardList from "./components/CardList/CardList";
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
+import CardListContainer from "./components/CardList";
 
 function App() {
   return (
-      <div className={styles.appContainer}>
-        <CardList />
-      </div>
+      <Provider store={store}>
+        <div className={styles.appContainer}>
+            <CardListContainer />
+        </div>
+      </Provider>
   );
 }
 
