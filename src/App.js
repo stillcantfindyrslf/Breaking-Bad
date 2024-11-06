@@ -1,15 +1,18 @@
 import styles from './App.module.scss';
 import React from 'react';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 import store from './store';
-import CardListContainer from "./components/CardList";
+import AppRoutes from "./routes/Routes";
 
 function App() {
   return (
       <Provider store={store}>
-        <div className={styles.appContainer}>
-            <CardListContainer />
-        </div>
+          <Router>
+              <div className={styles.appContainer}>
+                  <AppRoutes />
+              </div>
+          </Router>
       </Provider>
   );
 }
