@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import store from './store';
 import AppRoutes from "./routes/Routes";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
                   <div className={styles.app}>
                       <AppRoutes />
                   </div>
+                  <Footer />
               </Router>
       </Provider>
   );
