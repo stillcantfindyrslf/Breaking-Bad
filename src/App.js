@@ -9,7 +9,7 @@ function App() {
   return (
       <Provider store={store}>
           <Router>
-              <div className={styles.appContainer}>
+              <div className={styles.app}>
                   <AppRoutes />
               </div>
           </Router>
