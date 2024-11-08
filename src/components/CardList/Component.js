@@ -7,7 +7,7 @@ const CardList = ({ persons }) => (
     <div className={styles.cardList}>
         {persons.map((person) => (
             <Card
-                key={person.id}
+                id={person.id}
                 img={person.img}
                 status={person.status}
                 name={person.name}
