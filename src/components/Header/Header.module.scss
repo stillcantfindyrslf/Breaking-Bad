@@ -1,0 +1,50 @@
+.header {
+  padding: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.03);
+
+  .headerMenu {
+    margin: 0 auto;
+    max-width: 70rem;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #333333;
+    }
+
+    .menuBody {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menuList {
+        list-style-type: none;
+        display: flex;
+        gap: 3rem;
+
+        .menuLink {
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+
+.link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.activeLink {
+  color: #4aa2da;
+  text-decoration: none;
+  font-weight: 500;
+}
