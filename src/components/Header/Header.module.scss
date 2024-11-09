@@ -1,6 +1,7 @@
 .header {
   padding: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(18, 71, 57, 0.98);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 
   .headerMenu {
     margin: 0 auto;
@@ -13,7 +14,7 @@
       text-decoration: none;
       font-size: 1.8rem;
       font-weight: 500;
-      color: #333333;
+      color: #eae8e8;
     }
 
     .menuBody {
@@ -30,7 +31,7 @@
           text-decoration: none;
           font-size: 1.2rem;
           font-weight: 400;
-          color: #333333;
+          color: #eae8e8;
         }
       }
     }
@@ -44,7 +45,7 @@
 }
 
 .activeLink {
-  color: #4aa2da;
+  color: gold;
   text-decoration: none;
   font-weight: 500;
 }
