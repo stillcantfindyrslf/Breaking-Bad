@@ -1,69 +1,89 @@
 .containerList {
   padding: 1rem;
-}
 
-.textHeading {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
-}
+  .textHeading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
 
-.charactersPage {
-  padding: 1.25rem;
-}
+  .charactersPage {
+    padding: 1.25rem;
 
-.toggleContainer {
-  display: flex;
-  justify-content: center;
-  gap: 0.62rem;
-  margin-bottom: 1.25rem;
-  font-size: 1rem;
-  color: #333;
+    .filterContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
 
-  .toggleSwitch {
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 3.1rem;
-      height: 1.62rem;
+      .searchInput {
+        padding: 0.7rem;
+        margin: 1rem 0;
+        border-radius: 1.25rem;
+        border: 1px solid #ccc;
+        width: 23rem;
+        font-size: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
 
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+    .toggleContainer {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 0.62rem;
+      font-size: 1rem;
+      color: #333;
 
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: 0.4s;
-      border-radius: 1.5rem;
-    }
+      .toggleSwitch {
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 3.1rem;
+          height: 1.62rem;
+        }
 
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 1.25rem;
-      width: 1.1875rem;
-      left: 0.125rem;
-      bottom: 0.1875rem;
-      background-color: white;
-      transition: 0.2s;
-      border-radius: 50%;
-    }
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
 
-    input:checked + .slider {
-      background-color: rgba(162, 136, 70, 1);
-    }
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          transition: 0.4s;
+          border-radius: 1.5rem;
+        }
 
-    input:checked + .slider:before {
-      transform: translateX(1.625rem);
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 1.25rem;
+          width: 1.1875rem;
+          left: 0.125rem;
+          bottom: 0.1875rem;
+          background-color: white;
+          transition: 0.2s;
+          border-radius: 50%;
+        }
+
+        input:checked + .slider {
+          background-color: rgba(162, 136, 70, 1);
+        }
+
+        input:checked + .slider:before {
+          transform: translateX(1.625rem);
+        }
+      }
     }
   }
 }
