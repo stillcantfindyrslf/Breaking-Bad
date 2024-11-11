@@ -20,7 +20,7 @@ const CharactersListPage = () => {
 
     return (
         <div className={styles.containerList}>
-            <h1 className={styles.textHeading}>These are characters of serial</h1>
+            <h1 className={styles.textHeading}>These are characters of series</h1>
             <div className={styles.charactersPage}>
                 <div className={styles.filterContainer}>
                     <div className={styles.searchContainer}>
@@ -44,10 +44,14 @@ const CharactersListPage = () => {
                     </div>
                 </div>
 
-                {isGridView ? (
+                {filteredPersons.length === 0 ? (
+                    <p className={styles.noMatchesMessage}>No matches found</p>
+                ) : (
+                    isGridView ? (
                     <CardListContainer persons={filteredPersons} />
                 ) : (
                     <ListViewContainer persons={filteredPersons} />
+                    )
                 )}
             </div>
         </div>
