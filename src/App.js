@@ -8,17 +8,19 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-      <Provider store={store}>
-              <Router>
-                  <Header />
-                  <div className={styles.app}>
-                      <AppRoutes />
-                  </div>
-                  <Footer />
-              </Router>
-      </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <Router>
+                <div className={styles.app}>
+                    <Header />
+                        <div className={styles.content}>
+                            <AppRoutes />
+                        </div>
+                    <Footer />
+                </div>
+            </Router>
+        </Provider>
+    );
 }
 
 export default App;

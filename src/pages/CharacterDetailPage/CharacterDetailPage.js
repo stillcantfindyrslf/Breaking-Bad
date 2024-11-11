@@ -34,8 +34,8 @@ const CharacterDetailPage = () => {
                     </div>
                     <h1>{character.name}</h1>
                     <p className={styles.textInfo}><span>Date of birthday:</span> {character.birthday}</p>
-                    <p className={styles.textInfo}> <span>Nick name:</span> name of person</p>
-                    <p className={styles.textInfo}> <span>Quote:</span> а вот и цитата</p>
+                    <p className={styles.textInfo}><span>Nick name:</span> name of person</p>
+                    <p className={styles.textInfo}><span>Quote:</span> а вот и цитата</p>
                 </div>
             </div>
         </div>
