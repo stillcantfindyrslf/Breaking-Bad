@@ -11,20 +11,23 @@ const ListView = ({ persons }) => {
     };
 
     return (
-        <div className={styles.listView}>
-            {persons.map((person) => (
-                <div
-                    key={person.id}
-                    className={styles.listItem}
-                    onClick={() => handleClick(person.id)}
-                >
-                    <div className={styles.info}>
-                        <h3>{person.name}</h3>
-                        <p><span>Status: </span><StatusBadge status={person.status}/></p>
-                        <p><span>Date of birthday: </span>{person.birthday}</p>
+        <div className={styles.listViewContainer}>
+            <h2 className={styles.textHeading}>List of characters</h2>
+            <div className={styles.listView}>
+                {persons.map((person) => (
+                    <div
+                        key={person.id}
+                        className={styles.listItem}
+                        onClick={() => handleClick(person.id)}
+                    >
+                        <div className={styles.info}>
+                            <h3>{person.name}</h3>
+                            <p><span>Status: </span><StatusBadge status={person.status}/></p>
+                            <p><span>Date of birthday: </span>{person.birthday}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }
