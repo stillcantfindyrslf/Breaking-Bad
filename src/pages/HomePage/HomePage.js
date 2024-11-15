@@ -5,7 +5,7 @@ const HomePage = () => {
     return (
         <div className={styles.fullscreenImageContainer}>
             <img
-                src="/breakingBad.webp"
+                src={`${process.env.PUBLIC_URL}/breakingBad.webp`}
                 alt="Background"
                 loading="lazy"
                 className={styles.fullscreenImage}
